@@ -82,7 +82,10 @@ yarn start
 pnpm start
 # or
 bun start
-Project Structure
+
+
+
+### Project Structure
 app/: Contains the main application pages and components.
 styles/: Custom stylesheets.
 components/: Reusable UI components.
