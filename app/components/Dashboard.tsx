@@ -1,11 +1,22 @@
-import React from 'react'
+import React from 'react';
+import Overview from './Overview';
 
-const Dashboard = () => {
+const Dashboard: React.FC = () => {
   return (
-    <div>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione fuga quibusdam labore molestiae architecto vitae doloribus vel incidunt tempora hic dolorem laborum commodi officia, earum totam odio saepe id doloremque.
-    </div>
-  )
-}
+    <div className='w-full h-full'>
+      <h1 className='font-bold text-[35px]'>Dashboard</h1>
+      <div className='wrapper'>
+        <div className='first-col'>
+          <div className='overview'>
+            <Overview />
+          </div>
+          <div className='chart'></div>
+        </div>
+        <div className='second-col'></div>
+      </div>
 
-export default Dashboard
+    </div>
+  );
+};
+
+export default Dashboard;

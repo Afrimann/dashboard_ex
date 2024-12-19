@@ -6,7 +6,8 @@ import { MdPeopleOutline } from "react-icons/md";
 import { AiOutlineShop } from "react-icons/ai";
 import { GiMoneyStack } from "react-icons/gi";
 import { FcAdvertising } from "react-icons/fc";
-import { useState } from "react";
+import { CiSettings } from "react-icons/ci";
+import { IoIosLogOut } from "react-icons/io";
 
 interface SideMenuProps {
     onMenuClick: (menu: string) => void
@@ -18,7 +19,7 @@ export default function SideMenu({ onMenuClick, active }: SideMenuProps) {
     return (
         <div className="_"
             style={{
-                
+
             }}
         >
             <ul>
@@ -28,7 +29,7 @@ export default function SideMenu({ onMenuClick, active }: SideMenuProps) {
                     </div>
                     <div className="menu">
                         <span>Home</span>
-                        <span className="dropDownIcon"><SlArrowDown/></span>
+                        <span className="dropDownIcon"><SlArrowDown /></span>
                     </div>
                 </li>
                 <li onClick={() => onMenuClick('products')} className={`${active === 'products' ? 'active' : ''}`}>
@@ -37,7 +38,7 @@ export default function SideMenu({ onMenuClick, active }: SideMenuProps) {
                     </div>
                     <div className="menu">
                         <span>Products</span>
-                        <span className="dropDownIcon"><SlArrowDown/></span>
+                        <span className="dropDownIcon"><SlArrowDown /></span>
                     </div>
                 </li>
                 <li onClick={() => onMenuClick('customers')} className={`${active === 'customers' ? 'active' : ''}`}>
@@ -46,7 +47,7 @@ export default function SideMenu({ onMenuClick, active }: SideMenuProps) {
                     </div>
                     <div className="menu">
                         <span>Customers</span>
-                        <span className="dropDownIcon"><SlArrowDown/></span>
+                        <span className="dropDownIcon"><SlArrowDown /></span>
                     </div>
                 </li>
                 <li onClick={() => onMenuClick('shop')} className={`${active === 'shop' ? 'active' : ''}`}>
@@ -55,7 +56,7 @@ export default function SideMenu({ onMenuClick, active }: SideMenuProps) {
                     </div>
                     <div className="menu">
                         <span>Shop</span>
-                        <span className="dropDownIcon"><SlArrowDown/></span>
+                        <span className="dropDownIcon"><SlArrowDown /></span>
                     </div>
                 </li>
                 <li onClick={() => onMenuClick('income')} className={`${active === 'income' ? 'active' : ''}`}>
@@ -64,7 +65,7 @@ export default function SideMenu({ onMenuClick, active }: SideMenuProps) {
                     </div>
                     <div className="menu">
                         <span>Income</span>
-                        <span className="dropDownIcon"><SlArrowDown/></span>
+                        <span className="dropDownIcon"><SlArrowDown /></span>
                     </div>
                 </li>
                 <li onClick={() => onMenuClick('promote')} className={`${active === 'promote' ? 'active' : ''}`}>
@@ -73,7 +74,29 @@ export default function SideMenu({ onMenuClick, active }: SideMenuProps) {
                     </div>
                     <div className="menu">
                         <span>Promote</span>
-                        <span className="dropDownIcon"><SlArrowDown/></span>
+                        <span className="dropDownIcon"><SlArrowDown /></span>
+                    </div>
+                </li>
+            </ul>
+
+                <span className="border-[#000000] mx-auto border w-[60%]"></span>
+            <ul>
+                <li onClick={() => onMenuClick('settings')} className={`${active === 'settings' ? 'active' : ''}`}>
+                    <div className="displayIcon">
+                        <CiSettings className="w-10 h-10" />
+                    </div>
+                    <div className="menu">
+                        <span>Settings</span>
+                        <span className="dropDownIcon"><SlArrowDown /></span>
+                    </div>
+                </li>
+                <li onClick={() => onMenuClick('log-out')} className={`${active === 'log-out' ? 'active' : ''}`}>
+                    <div className="displayIcon">
+                        <IoIosLogOut className="w-10 h-10" />
+                    </div>
+                    <div className="menu">
+                        <span>Log out</span>
+                        <span className="dropDownIcon"><SlArrowDown /></span>
                     </div>
                 </li>
             </ul>
