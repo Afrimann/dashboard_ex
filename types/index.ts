@@ -11,3 +11,8 @@ export type User = {
     email?: string | null | undefined 
     image?: string | null | undefined
 }
+export type UserImage = {
+    id: number
+    image: string
+    name: string
+}
