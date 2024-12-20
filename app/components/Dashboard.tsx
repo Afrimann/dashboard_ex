@@ -3,7 +3,7 @@ import Overview from './Overview';
 
 const Dashboard: React.FC = () => {
   return (
-    <div className='w-full h-full'>
+    <div>
       <h1 className='font-bold text-[35px]'>Dashboard</h1>
       <div className='wrapper'>
         <div className='first-col'>
@@ -12,9 +12,15 @@ const Dashboard: React.FC = () => {
           </div>
           <div className='chart'></div>
         </div>
-        <div className='second-col'></div>
+        <div className='second-col'>
+          <div className='sec-one'>
+          
+          </div>
+          <div className='sec-two'>
+          
+          </div>
+        </div>
       </div>
-
     </div>
   );
 };

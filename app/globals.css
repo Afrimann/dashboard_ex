@@ -60,11 +60,11 @@
 /* MAIN STYLES */
 /* MAIN STYLES */
 .mainContent {
-  @apply h-full w-full flex;
+  @apply min-h-full h-auto w-full flex border border-[blue];
 }
 
 .contentArea {
-  @apply w-[100%] md:w-[72%] bg-[#DBDBDB] h-full;
+  @apply w-[100%] md:w-[72%] bg-[#DBDBDB];
 }
 
 .dynamicContent {
@@ -72,12 +72,8 @@
 }
 
 /* DASHBOARD STYLES */
-.home {
-  @apply w-full h-full;
-}
-
 .wrapper {
-  @apply flex flex-col md:flex-row gap-4 w-full h-full;
+  @apply flex flex-col md:flex-row gap-4 border-4 border-[green] h-full;
 }
 
 .first-col {
@@ -85,9 +81,14 @@
 }
 
 .second-col {
-  @apply w-[100%] md:w-[35%] h-full bg-white rounded-lg;
+  @apply w-[100%] md:w-[35%] h-full rounded-lg flex flex-col gap-4;
 }
-
+.sec-one{
+  @apply h-[330px] bg-white rounded-lg
+}
+.sec-two{
+  @apply h-[200px] bg-white rounded-lg
+}
 .overview {
   @apply w-full h-[300px] bg-white p-4 rounded-lg;
 }

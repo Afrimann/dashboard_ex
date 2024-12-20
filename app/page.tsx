@@ -25,12 +25,12 @@ export default function Page() {
 
 
   return (
-    <div className='w-full h-screen overflow-hidden'>
+    <div className='border-[red] border w-full h-screen md:min-h-auto md:overflow-hidden overflow-x-hidden overflow-y-visible'>
       <Header
         showSideMenu={showSideMenu}
       />
       <main className='flex mainContent'>
-        <div className={`fixed top-0 left-0 h-full bg-white w-[100%] md:w-[28%] transition-transform transform ${sideMenuVisible ? 'translate-x-0' : '-translate-x-full'} md:translate-x-0 md:relative`}>
+        <div className={`fixed top-0 left-0 h-full bg-white w-[100%] md:w-[28%] transition-transform transform ${sideMenuVisible ? 'translate-x-0' : '-translate-x-full'} md:translate-x-0 md:relative z-[1000]`}>
 
           <SideMenu
             onMenuClick={handleMenuClick}
