@@ -16,3 +16,11 @@ export type UserImage = {
     image: string
     name: string
 }
+
+export type Product = {
+    name?: string | null | undefined
+    id: number
+    desc: string
+    icon: string
+    price: number | null
+}

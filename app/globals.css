@@ -12,7 +12,7 @@
 /* HEADER STYLES */
 /* HEADER STYLES */
 .header {
-  @apply w-full h-[100px] flex flex-col justify-center px-6 bg-white;
+  @apply fixed top-0 w-full h-[100px] flex flex-col justify-center px-6 bg-white z-[10000];
 }
 
 .navbar {
@@ -41,7 +41,7 @@
   @apply bg-white w-[28%] hidden md:block transition-all duration-200 ease-in-out z-[1000]  md:z-auto
 } */
 ._ {
-  @apply flex flex-col;
+  @apply flex flex-col fixed w-full;
 }
 
 ._ ul {
@@ -60,11 +60,11 @@
 /* MAIN STYLES */
 /* MAIN STYLES */
 .mainContent {
-  @apply min-h-full h-auto w-full flex border border-[blue];
+  @apply min-h-full h-auto w-full flex ;
 }
 
 .contentArea {
-  @apply w-[100%] md:w-[72%] bg-[#DBDBDB];
+  @apply w-[100%] md:w-[72%] bg-[#DBDBDB] mt-[7rem];
 }
 
 .dynamicContent {
@@ -73,7 +73,7 @@
 
 /* DASHBOARD STYLES */
 .wrapper {
-  @apply flex flex-col md:flex-row gap-4 border-4 border-[green] h-full;
+  @apply flex flex-col md:flex-row gap-4 h-full;
 }
 
 .first-col {
@@ -84,7 +84,7 @@
   @apply w-[100%] md:w-[35%] h-full rounded-lg flex flex-col gap-4;
 }
 .sec-one{
-  @apply h-[330px] bg-white rounded-lg
+  @apply h-[350px] bg-white rounded-lg px-6 py-4
 }
 .sec-two{
   @apply h-[200px] bg-white rounded-lg
@@ -140,3 +140,9 @@
   @apply flex flex-col items-center
 }
 
+.product-earn{
+  @apply  w-full flex flex-col gap-2
+}
+.product-details{
+  @apply flex flex-col
+}

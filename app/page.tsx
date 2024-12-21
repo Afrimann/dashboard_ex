@@ -1,11 +1,11 @@
 'use client'
-import React, { useEffect, useState } from 'react';
-import { Header } from './components';
-import SideMenu from './components/SideMenu';
+import React, { useEffect, useState } from 'react'
+import { Header } from './components'
+import SideMenu from './components/SideMenu'
 
-import DynamicContent from './components/DynamicContent';
+import DynamicContent from './components/DynamicContent'
 
-export default function Page() {
+export default function Page () {
   // manage active menu and dynamic rendering
   const [selectedMenu, setSelectedMenu] = useState('home')
   const [active, setActive] = useState('home')
@@ -23,29 +23,21 @@ export default function Page() {
   }, [])
   const showSideMenu = () => setSideMenuVisible(!sideMenuVisible)
 
-
   return (
-    <div className='border-[red] border w-full h-screen md:min-h-auto md:overflow-hidden overflow-x-hidden overflow-y-visible'>
-      <Header
-        showSideMenu={showSideMenu}
-      />
+    <div className='w-full min-h-screen md:min-h-auto md:overflow-hidden overflow-x-hidden overflow-y-visible'>
+      <Header showSideMenu={showSideMenu} />
       <main className='flex mainContent'>
-        <div className={`fixed top-0 left-0 h-full bg-white w-[100%] md:w-[28%] transition-transform transform ${sideMenuVisible ? 'translate-x-0' : '-translate-x-full'} md:translate-x-0 md:relative z-[1000]`}>
-
-          <SideMenu
-            onMenuClick={handleMenuClick}
-            active={active}
-
-          />
+        <div
+          className={`fixed top-[6rem] left-0 h-screen bg-white w-[100%] md:w-[28%] transition-transform transform ${
+            sideMenuVisible ? 'translate-x-0' : '-translate-x-full'
+          } md:translate-x-0 z-[1000]`}
+        >
+          <SideMenu onMenuClick={handleMenuClick} active={active} />
         </div>
-        <div className='contentArea'>
-          <DynamicContent
-            selectedMenu={selectedMenu}
-          />
+        <div className='flex-1 md:ml-[28%] contentArea'>
+          <DynamicContent selectedMenu={selectedMenu} />
         </div>
       </main>
-
-
     </div>
-  );
+  )
 }
