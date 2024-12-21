@@ -27,9 +27,6 @@ const Overview = () => {
               color: '#868686',
               zIndex: '100'
             }}
-            // onClick={()=> setIsCLicked(true)}
-            // onFocus={()=> setIsCLicked(true)}
-            // onBlur={()=> setIsCLicked(false)}
           >
             <option value='all time' className=''>
               All time
