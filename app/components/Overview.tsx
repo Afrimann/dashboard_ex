@@ -12,7 +12,7 @@ const Overview = () => {
   return (
     <div className='overview-container'>
       <div className='overview-heading'>
-        <h1 className='text-[22px] text-black'>Overview</h1>
+        <h1 className='font-semibold text-[25px] text-black'>Overview</h1>
         <div className='relative flex items-center gap-3 bg-[#EFEFEF] p-0 rounded-lg overview-filter w-[130px] cursor-pointer'>
           {/* change this select usage to a normal div for flexibility */}
           <select

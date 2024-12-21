@@ -87,7 +87,7 @@
   @apply h-[350px] bg-white rounded-lg px-6 py-4
 }
 .sec-two{
-  @apply h-[200px] bg-white rounded-lg
+  @apply h-[200px] bg-white rounded-lg px-6 py-4
 }
 .overview {
   @apply w-full h-[300px] bg-white p-4 rounded-lg;
