@@ -2,7 +2,7 @@ import { TopProducts } from '@/constants'
 import Image from 'next/image'
 export default function TopProduct () {
   return (
-    <div className=''>
+    <div>
       {TopProducts.map(product => (
         <div
           key={product.id}
@@ -16,6 +16,7 @@ export default function TopProduct () {
                 width={40}
                 height={40}
                 className='object-contain'
+
               />
             </span>
             <span className='product-details'>
