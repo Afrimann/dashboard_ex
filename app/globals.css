@@ -94,7 +94,7 @@
 }
 
 .chart {
-  @apply w-full h-[210px] bg-white rounded-lg;
+  @apply w-full h-[210px] bg-white rounded-lg p-4;
 }
 
 /* DASHBOARD OVERVIEW STYLES */

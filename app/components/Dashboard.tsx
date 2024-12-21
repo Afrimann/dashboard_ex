@@ -1,6 +1,8 @@
 import React from 'react'
 import Overview from './Overview'
 import ProductEarningCard from './ProductEarningsCard'
+import { SlArrowDown } from 'react-icons/sl'
+import Image from 'next/image'
 
 const Dashboard: React.FC = () => {
   return (
@@ -11,7 +13,21 @@ const Dashboard: React.FC = () => {
           <div className='overview'>
             <Overview />
           </div>
-          <div className='chart'></div>
+          <div className='chart'>
+            <div className='flex justify-between w-full'>
+              <h2 className='font-semibold text-[20px]'>Total Income</h2>
+              <SlArrowDown className='font-bold cursor-pointer' />
+            </div>
+            <div className='mt-3 charted-data'>
+              <Image
+                src='/chart.png'
+                alt='chart'
+                width={500}
+                height={500} 
+                className='object-contain'
+              />
+            </div>
+          </div>
         </div>
         <div className='second-col'>
           <div className='sec-one'>
@@ -33,7 +49,9 @@ const Dashboard: React.FC = () => {
             <div className=''>
               <div className='w-full'>
                 <span className='flex justify-between border-[#EFEFEF] mt-4 border-b-2'>
-                  <h2 className='mb-3 font-semibold text-[#868686]'>Messages</h2>
+                  <h2 className='mb-3 font-semibold text-[#868686]'>
+                    Messages
+                  </h2>
                   <h2 className='font-semibold text-[#868686]'>Date</h2>
                 </span>
                 <div className='w-full comments'>
