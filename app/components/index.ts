@@ -7,7 +7,6 @@ import Customers from "./Customers";
 import Shop from "./Shop";
 import Income from "./Income";
 import Promote from "./Promote";
-import Settings from "./Settings";
 export {
     Header,
     CustomButton,

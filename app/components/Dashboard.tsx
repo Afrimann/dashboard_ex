@@ -3,6 +3,7 @@ import Overview from './Overview'
 import ProductEarningCard from './ProductEarningsCard'
 import { SlArrowDown } from 'react-icons/sl'
 import Image from 'next/image'
+import Comments from './Comments'
 
 const Dashboard: React.FC = () => {
   return (
@@ -55,9 +56,11 @@ const Dashboard: React.FC = () => {
                   <h2 className='font-semibold text-[#868686]'>Date</h2>
                 </span>
                 <div className='w-full comments'>
-                  <p className='mx-auto max-w-[60%] font-semibold text-[#86868652] text-center italic'>
-                    you don't have any comment yet.
-                  </p>
+                  <div className='mx-auto max-w-[60%] font-semibold text-[#86868652] text-center italic'>
+
+                      <Comments />
+                    
+                  </div>
                 </div>
               </div>
             </div>

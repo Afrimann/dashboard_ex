@@ -2,8 +2,6 @@
 import Image from 'next/image'
 import { FaSearch } from 'react-icons/fa'
 import { CustomButton } from '.'
-import { UserProfilePicture } from '.'
-import { User } from '@/types'
 import { FaHamburger } from 'react-icons/fa'
 
 interface Props {

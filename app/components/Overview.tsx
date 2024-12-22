@@ -7,7 +7,6 @@ import { useState } from 'react'
 
 const Overview = () => {
   // this component is the content for the overview section of the dashboard
-  const [isClicked, setIsCLicked] = useState(false)
 
   return (
     <div className='overview-container'>
