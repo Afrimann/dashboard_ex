@@ -17,8 +17,8 @@ const Comments = () => {
         }
         const data = await response.json()
         setComments(data)
-      } catch (error) {
-        setError('Unable to fetch Data.')
+      } catch (error: any) {
+        setError(error.message)
       } finally {
         setLoading(false)
       }

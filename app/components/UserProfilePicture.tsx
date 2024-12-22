@@ -5,10 +5,10 @@ interface Props{
 }
 
 
-export default function ProfilePicture({user}:Props) {
+export default function ProfilePicture({}:Props) {
     return (
         <div>
-            {}
+            
         </div>
     )
 }
