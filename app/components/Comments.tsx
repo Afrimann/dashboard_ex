@@ -1,9 +1,7 @@
 import { useEffect, useState } from 'react'
 
 const Comments = () => {
-  const [comments, setComments] = useState<Array<string>>([
-    'You have a good product'
-  ])
+  const [comments, setComments] = useState<Array<string>>([])
   const [error, setError] = useState<string>('')
   const [loading, setLoading] = useState<boolean>(false)
 
