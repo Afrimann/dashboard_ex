@@ -3,7 +3,6 @@
 import userImages from '@/constants'
 import { SlArrowDown } from 'react-icons/sl'
 import Image from 'next/image'
-import { useState } from 'react'
 
 const Overview = () => {
   // this component is the content for the overview section of the dashboard
